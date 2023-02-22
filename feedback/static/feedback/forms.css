@@ -1,3 +1,32 @@
+body, table {
+    margin: 0;
+    font-family: Sans-Serif;
+}
+
+h2, table{
+    width:50%;
+    margin: 20px auto 5px;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px #3ca3c1;
+}
+
+form, table {
+    margin: 1.5rem auto 5px;
+    width: 90%;
+    max-width: 40rem;
+    padding: 1rem;
+    border-radius: 10px;
+    font-size: 16px;
+    background-color: white;
+    box-shadow: 0 2px 8px #3ca3c1;
+}
+
+th, td {
+    border: 1px solid black;
+}
+
 body {
     margin: 0;
     font-family: Sans-Serif;
@@ -76,3 +105,4 @@ button:active {
 .errors label{
  color: #aaff54;
 }
+

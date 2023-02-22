@@ -9,7 +9,7 @@ class Feedback(models.Model):
     rating = models.PositiveIntegerField(validators=[MinValueValidator(1), MaxValueValidator(10) ])
 
     def __str__(self):
-        return f'{self.id}, {self.name}, {self.surname}, {self.feedback}, {self.rating}'
+        return f'Имя: {self.name},  Фамилия: {self.surname}, Отзыв: {self.feedback}, Оценка: {self.rating}'
 
 
 # from feedback.models import Feedback

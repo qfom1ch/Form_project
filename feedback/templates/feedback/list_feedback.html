@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block title %} Список отзывов{% endblock %}
+
+
+{% block content %}
+    <h2>Список отзывов</h2>
+    <table>
+            <caption> <h2>Список всех отзывов </h2>   </caption>
+            <thead>
+            <tr>
+            <th>Фамилия</th>        <th>Имя</th>        <th>Отзыв</th>        <th>Рейтинг</th>
+            </tr>
+            </thead>
+                <tbody>
+                {% for feedback in list %}
+                <tr>
+    <td>{{feedback.surname}}</td>  <td>{{feedback.name}}</td>  <td>{{feedback.feedback}}</td> <td>{{feedback.rating}}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+
+
+{% endblock %}
