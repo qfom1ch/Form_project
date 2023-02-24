@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %} Список файлов {% endblock %}
+
+{% block content %}
+    <h2>Список файлов</h2>
+    <ol>
+        {% for record in records %}
+            <li>
+                <img src="{{ record.image.url }}" height="400" width="600">
+            </li>
+        {% endfor %}
+    </ol>
+{% endblock %}

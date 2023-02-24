@@ -1,11 +1,14 @@
 {% extends 'base.html' %}
 
-{% block title %}  Отзыв  {% endblock %}
+{% block title %}  Информация об отзыве  {% endblock %}
 
 
 {% block content %}
-    <h2>Отзыв</h2>
-    <h2>{{ det }}</h2>
+    <h2>Информация об отзыве</h2>
+    <h3>Имя - {{ det.name }}</h3>
+    <h3>Фамилия - {{ det.surname }}</h3>
+    <h3>Рейтинг - {{ det.rating }}</h3>
+    <p>{{ det.feedback }}</p>
 
 
 
